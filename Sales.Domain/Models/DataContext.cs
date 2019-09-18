@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sales.Domain.Models
+namespace Sales.Domain.Models  
 {
     public class DataContext : DbContext
     {
@@ -13,5 +13,7 @@ namespace Sales.Domain.Models
         {
 
         }
+
+        public System.Data.Entity.DbSet<Sales.Common.Models.Product> Products { get; set; }
     }
 }
